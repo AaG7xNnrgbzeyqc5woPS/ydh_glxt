@@ -37,8 +37,8 @@ In the setup above, if unitX is not in a package in the requires section of pack
 
 So whatever you do:
 
-    Each unit (let's call it A) can only be in one single package at once.
-    If another unit (say, Z) needs to use it (A), the package for that unit (Z) must reference (in the requires section) the package that contains unit A. Unit A should not be included directly.
+- Each unit (let's call it A) can only be in one single package at once.
+- If another unit (say, Z) needs to use it (A), the package for that unit (Z) must reference (in the requires section) the package that contains unit A. Unit A should not be included directly.
 
 If there still are naming conflicts, rename the units until each name is unique.
 
