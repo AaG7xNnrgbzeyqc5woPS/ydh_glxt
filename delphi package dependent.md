@@ -7,10 +7,10 @@ Delphi IDE is far from perfect when it comes to editing/compiling packages but y
 
 I can only give you general advices addressing the info given:
 
-    If you need a common include file for 2 packages create a separate directory for the file and add this directory to the search paths of both packages (in Base build configuration).
+ If you need a common include file for 2 packages create a separate directory for the file and add this directory to the search paths of both packages (in Base build configuration).
 
-    Never keep .dcu's in the same folders with source files; always set "unit output directory" option for your packages (also in Base build configuration); I recommend $(BDSCOMMONDIR)\MyPacks\$(Config)\$(Platform) as such directory for your packages; if you already have .dcu's in the source (.pas) folders delete them, does not matter which Delphi version created these .dcu's.
+  Never keep .dcu's in the same folders with source files; always set "unit output directory" option for your packages (also in Base build configuration); I recommend $(BDSCOMMONDIR)\MyPacks\$(Config)\$(Platform) as such directory for your packages; if you already have .dcu's in the source (.pas) folders delete them, does not matter which Delphi version created these .dcu's.
 
-    Never add paths to dependent package's sources to the search path, only paths to compiled .dcu's (would be $(BDSCOMMONDIR)\MyPacks\$(Config)\$(Platform) if you follow previous advice).
+  Never add paths to dependent package's sources to the search path, only paths to compiled .dcu's (would be $(BDSCOMMONDIR)\MyPacks\$(Config)\$(Platform) if you follow previous advice).
 
 
