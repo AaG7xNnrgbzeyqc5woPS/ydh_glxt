@@ -1,6 +1,7 @@
 # See:
 - [Error F2063 Could not compile used unit (of dependent package)](https://stackoverflow.com/questions/28084508/error-f2063-could-not-compile-used-unit-of-dependent-package)
 - [Delphi package conflicts with itself in a subpackage](https://stackoverflow.com/questions/41101857/delphi-package-conflicts-with-itself-in-a-subpackage)
+- [X1033 Unit '%s' implicitly imported into package '%s' (Delphi)](https://docwiki.embarcadero.com/RADStudio/Berlin/en/X1033_Unit_'%25s'_implicitly_imported_into_package_'%25s'_(Delphi))
 
 # 建议一：
 
