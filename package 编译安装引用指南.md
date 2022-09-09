@@ -35,6 +35,6 @@
 # 3. 总结：
 - package 源代码路径要　加入　Library path,  菜单：Tool\Enviroment option\library\Library path,否则应用项目的编译无法通过
 - 注意，package 的源码路径可能有多个子目录，都要加进去！
-- 每个unit单元文件只能处于一个 package中，不要千万不要重复包含！
+- 每个unit单元文件只能处于一个 package中，千万不要重复包含！
 - 遇到package 安装异常，删除“C:\Program Files\Borland\Delphi7\Projects\Bpl”下我们的输出文件，重新编译安装，一般都可以解决。
 - package 源码路径 加入应用项目的 Library path，不是 package search 路径，试过了，不行！  
