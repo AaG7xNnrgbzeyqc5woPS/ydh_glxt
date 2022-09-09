@@ -13,22 +13,24 @@
     
     
  # 2. 安装包名称和路径：
-0.    YDHSRC='D:\work\ydh_crm\src'
-1.    hwtvcl60.dpk          　　　　　　　$(YDHSRC)\control\vclH60                D:\work\ydh_crm\src\control\vclH60
-2.    Pdygx.dpk(单据关系查询)             $(YDHSRC)\control\dygx                  D:\work\ydh_crm\src\control\dygx
-3.    PkgFPGL.dpk(发票管理)　　           $(YDHSRC)\control\exe_fpgl              D:\work\ydh_crm\src\control\exe_fpgl 
-4.    Package_grzjbl.dpk(个人资金)    　　$(YDHSRC)\control\个人资金                D:\work\ydh_crm\src\control\个人资金
-　　　　　　　　　　　　　　　　　　　　　$(YDHSRC)\control\个人资金\资金管理
-5.    ydh_yggl.dpk          　　　　　　　$(YDHSRC)\control\员工管理              D:\work\ydh_crm\src\control\员工管理
-6.    ydh_add.dpk           　　　　　　　$(YDHSRC)\control                       D:\work\ydh_crm\src\control 
-　　　　　　　　　　　　　　　　　　　　　$(YDHSRC)\control\订单与发票
-　　　　　　　　　　　　　　　　　　　　　$(YDHSRC)\control\企业收付款
-7.    Pkjkm.dpk(会计帐本)　　             $(YDHSRC)\exe_kuijikemu                 D:\work\ydh_crm\src\exe_kuijikemu          //这个别忘记啦！在另外一个目录里面
-8.    y_qygl_crm.dpr        　　　　　　　$(YDHSRC)\                          //这个是主项目
+ ```
+0.    YDHSRC='D:\work\ydh_crm\src'      
+1.    hwtvcl60.dpk          　　　　　　　$(YDHSRC)\control\vclH60               
+2.    Pdygx.dpk(单据关系查询)             $(YDHSRC)\control\dygx                
+3.    PkgFPGL.dpk(发票管理)　　           $(YDHSRC)\control\exe_fpgl             
+4.    Package_grzjbl.dpk(个人资金)    　　$(YDHSRC)\control\个人资金              
+　　　　　　　　　　　　　　　　　　　　　     $(YDHSRC)\control\个人资金\资金管理
+5.    ydh_yggl.dpk          　　　　　　　$(YDHSRC)\control\员工管理              
+6.    ydh_add.dpk           　　　　　　　$(YDHSRC)\control                       
+　　　　　　　　　　　　　　　　　　　　　     $(YDHSRC)\control\订单与发票
+　　　　　　　　　　　　　　　　　　　　　     $(YDHSRC)\control\企业收付款
+7.    Pkjkm.dpk(会计帐本)　　             $(YDHSRC)\exe_kuijikemu   //这个别忘记啦！在另外一个目录里面
+8.    y_qygl_crm.dpr        　　　　　　　$(YDHSRC)\                //这个是主项目
+```
 
 注意：上述源代码路径要　加入　Library path,  菜单：Tool\Enviroment option\library\Library path
 
-每个包的项目前缀H_,   版本号码100
+每个包的项目前缀 ”H_“  ， 版本号码100
 
 # 3. 总结：
 - package 源代码路径要　加入　Library path,  菜单：Tool\Enviroment option\library\Library path,否则应用项目的编译无法通过
