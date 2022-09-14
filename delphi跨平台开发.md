@@ -7,4 +7,4 @@
 - [中文delphi BBS](http://bbs.2ccc.com/)
 - [Delphi 跨平台（delphi 开发）](https://www.gaojipro.com/a/48473)
 - [Delphi没落了？！delphi为什么没人用了？！delphi还有人学吗？！告诉你一个事实：现在全世界有300万程序员每天在用Delphi开发各种软件APP应用！](https://blog.csdn.net/xyzhan/article/details/86521188?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-86521188-blog-105527304.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-86521188-blog-105527304.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=1)
-- 
+- [RAD Studio 11.2](https://www.embarcadero.com/)
