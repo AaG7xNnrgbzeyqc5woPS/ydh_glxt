@@ -1,0 +1,10 @@
+# See: 
+- [Delphi 开发跨平台 Android / iOS 程序的多语言](https://blog.51cto.com/kinglandsoft/5268582)
+- [Delphi 11.2 真香！！！ ](https://blog.51cto.com/kinglandsoft/5603884)
+- [Delphi 11.2即将到来！](https://blog.51cto.com/kinglandsoft/5478337)
+- [Delphi 开发跨平台 Android / iOS 程序的多语言](https://blog.51cto.com/kinglandsoft/5268582)
+- [推荐一个非常好用的多平台应用开发工具-Delphi](https://zhuanlan.zhihu.com/p/162377971)
+- [中文delphi BBS](http://bbs.2ccc.com/)
+- [Delphi 跨平台（delphi 开发）](https://www.gaojipro.com/a/48473)
+- [Delphi没落了？！delphi为什么没人用了？！delphi还有人学吗？！告诉你一个事实：现在全世界有300万程序员每天在用Delphi开发各种软件APP应用！](https://blog.csdn.net/xyzhan/article/details/86521188?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-86521188-blog-105527304.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-86521188-blog-105527304.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=1)
+- 
