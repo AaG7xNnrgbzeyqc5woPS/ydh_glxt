@@ -53,10 +53,11 @@ begin
 end;
 ```
 # 2. 如何将一个二进制文件保存到mysql数据库中？
-TBlobField(Table1.FieldbyName('blob')).LoadFromFile(Filename);
+TBlobField(Table1.FieldbyName('blob')).LoadFromFile(Filename);  
 ......SaveToFile();
 
-# 3. MS SQL server 可以使用存储过程，存储过程的输入和输出参数支持 image格式，也就是二进制
+# 3. MS SQL server 存储过程 使用二进制
+- 存储过程的输入和输出参数支持 image格式，也就是二进制
 ```
 ```
 
