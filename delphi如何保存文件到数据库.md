@@ -1,8 +1,9 @@
-# See:
+# 0. See:
   - [delphi 把文件以二进制形式存入数据库](https://www.programminghunter.com/article/16362068675/)
   - [ delphi 把文件以二进制形式存入数据库 -- 更早源... ](http://www.360doc.com/content/12/0320/15/7389824_195972415.shtml)
+  - [Delphi+Mysql(如何将一个二进制文件保存到mysql数据库中？)](https://bbs.csdn.net/topics/133012)
 
-# 文章引用
+# 1. 原文拷贝
 ```
 //上传
 procedure TForm1.BitBtn1Click(Sender: TObject);
@@ -51,3 +52,11 @@ begin
   end;
 end;
 ```
+# 2. 如何将一个二进制文件保存到mysql数据库中？
+TBlobField(Table1.FieldbyName('blob')).LoadFromFile(Filename);
+......SaveToFile();
+
+# 3. MS SQL server 可以使用存储过程，存储过程的输入和输出参数支持 image格式，也就是二进制
+```
+```
+
