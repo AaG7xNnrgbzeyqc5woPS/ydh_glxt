@@ -5,3 +5,4 @@
 - [Bulk copy data with bcp to SQL Server on Linux](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-migrate-bcp?view=sql-server-ver16)
 - [sqlcmd - Use the utility](https://learn.microsoft.com/en-us/sql/ssms/scripting/sqlcmd-use-the-utility?source=recommendations&view=sql-server-ver16)
 - [sqlcmd Utility](https://learn.microsoft.com/en-us/sql/tools/sqlcmd-utility?source=recommendations&view=sql-server-ver16)
+- [Download SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
