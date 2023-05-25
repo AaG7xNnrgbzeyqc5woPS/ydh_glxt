@@ -41,8 +41,13 @@ services:
       - /etc/timezone:/etc/timezone:ro
 
 ```
+
+```
 docker-compose up -d
 docker-compose down
 docker-compose ps
+docker-compose logs
+docker-compose images
+docker-compose      ## For Help
 ```
 
