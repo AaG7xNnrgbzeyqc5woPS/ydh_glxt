@@ -102,3 +102,18 @@ CREATE TABLE Inventory (id INT, name NVARCHAR(50), quantity INT);
 INSERT INTO Inventory VALUES (1, 'banana', 150); INSERT INTO Inventory VALUES (2, 'orange', 154);
 GO
 ```
+
+# 选择数据
+
+```
+SELECT * FROM Inventory WHERE quantity > 152;
+go
+```
+
+# 退出sqlcmd 命令提示符
+```
+quit
+```
+
+
+
