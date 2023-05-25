@@ -58,3 +58,10 @@ docker exec -t sql2022 cat /var/opt/mssql/log/errorlog | grep connection
 docker-compose logs | grep connection
 ```
 
+## 更改 SA 密码
+查看不安全的密码：
+```
+ ps -eax
+ ps -eax | grep SA
+```
+
