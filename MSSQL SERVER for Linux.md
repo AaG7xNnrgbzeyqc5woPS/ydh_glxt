@@ -72,4 +72,15 @@ sudo docker exec -it sql2022 /opt/mssql-tools/bin/sqlcmd \
  -P "$(read -sp "Enter current SA password: "; echo "${REPLY}")" \
  -Q "ALTER LOGIN SA WITH PASSWORD=\"$(read -sp "Enter new SA password: "; echo "${REPLY}")\""
 ```
+# 连接 SQL SERVER 2022 
+- 登陆容器 container
+```
+sudo docker exec -it sql2022 "bash"
+```
+- 在容器内部使用完整路径通过 sqlcmd 进行本地连接
+```
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "<YourNewStrong@Passw0rd>"
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA
+```
+- 如果成功，应会显示 sqlcmd 命令提示符：1>
 
