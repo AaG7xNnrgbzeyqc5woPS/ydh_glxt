@@ -51,3 +51,10 @@ docker-compose images
 docker-compose      ## For Help
 ```
 
+## 查看日志 是服务器否准备好
+
+```
+docker exec -t sql2022 cat /var/opt/mssql/log/errorlog | grep connection
+docker-compose logs | grep connection
+```
+
