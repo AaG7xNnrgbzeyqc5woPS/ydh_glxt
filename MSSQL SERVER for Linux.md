@@ -59,9 +59,17 @@ docker-compose logs | grep connection
 ```
 
 ## 更改 SA 密码
-查看不安全的密码：
+### 查看不安全的密码：
 ```
  ps -eax
  ps -eax | grep SA
+```
+
+### 下面的命令可以更改SA密码
+```
+sudo docker exec -it sql2022 /opt/mssql-tools/bin/sqlcmd \
+-S localhost -U SA \
+ -P "$(read -sp "Enter current SA password: "; echo "${REPLY}")" \
+ -Q "ALTER LOGIN SA WITH PASSWORD=\"$(read -sp "Enter new SA password: "; echo "${REPLY}")\""
 ```
 
