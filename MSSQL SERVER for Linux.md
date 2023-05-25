@@ -84,3 +84,21 @@ sudo docker exec -it sql2022 "bash"
 ```
 - 如果成功，应会显示 sqlcmd 命令提示符：1>
 
+# 建立数据库 TestDB
+
+```
+create database TestDB
+go
+
+select name from sys.databases
+go
+
+```
+
+# 插入数据
+```
+use TestDB
+CREATE TABLE Inventory (id INT, name NVARCHAR(50), quantity INT);
+INSERT INTO Inventory VALUES (1, 'banana', 150); INSERT INTO Inventory VALUES (2, 'orange', 154);
+GO
+```
