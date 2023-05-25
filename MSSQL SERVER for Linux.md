@@ -14,14 +14,14 @@
 - [What is Azure Data Studio?](https://learn.microsoft.com/en-us/sql/azure-data-studio/what-is-azure-data-studio?view=sql-server-ver16)
 - [Download and install Azure Data Studio](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16)
 
-# 运行 SQL SERVER 2022
+# 1. 运行 SQL SERVER 2022
 - [Microsoft SQL Server - Ubuntu based images](https://hub.docker.com/_/microsoft-mssql-server)
 - [Quickstart: Run SQL Server Linux container images with Docker](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&pivots=cs1-bash)
 ```
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=yourStrong(!)Password" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 ```
 
-# With Docker-commpose 
+# 2. RUN With Docker-commpose 
 - configure file  "docker-compose.yml":
 ```
 version: '3.9'
@@ -51,14 +51,14 @@ docker-compose images
 docker-compose      ## For Help
 ```
 
-## 查看日志 是服务器否准备好
+# 3. 查看日志 是服务器否准备好
 
 ```
 docker exec -t sql2022 cat /var/opt/mssql/log/errorlog | grep connection
 docker-compose logs | grep connection
 ```
 
-## 更改 SA 密码
+# 4. 更改 SA 密码
 ### 查看不安全的密码：
 ```
  ps -eax
@@ -72,7 +72,7 @@ sudo docker exec -it sql2022 /opt/mssql-tools/bin/sqlcmd \
  -P "$(read -sp "Enter current SA password: "; echo "${REPLY}")" \
  -Q "ALTER LOGIN SA WITH PASSWORD=\"$(read -sp "Enter new SA password: "; echo "${REPLY}")\""
 ```
-# 连接 SQL SERVER 2022 
+# 5. 连接 SQL SERVER 2022 
 - 登陆容器 container
 ```
 sudo docker exec -it sql2022 "bash"
@@ -84,7 +84,7 @@ sudo docker exec -it sql2022 "bash"
 ```
 - 如果成功，应会显示 sqlcmd 命令提示符：1>
 
-# 建立数据库 TestDB
+# 6. 建立数据库 TestDB
 
 ```
 create database TestDB
@@ -95,7 +95,7 @@ go
 
 ```
 
-# 插入数据
+# 7. 插入数据
 ```
 use TestDB
 CREATE TABLE Inventory (id INT, name NVARCHAR(50), quantity INT);
@@ -103,17 +103,36 @@ INSERT INTO Inventory VALUES (1, 'banana', 150); INSERT INTO Inventory VALUES (2
 GO
 ```
 
-# 选择数据
+# 8. 选择数据
 
 ```
 SELECT * FROM Inventory WHERE quantity > 152;
 go
 ```
 
-# 退出sqlcmd 命令提示符
+# 9. 退出sqlcmd 命令提示符
 ```
 quit
 ```
 
-
+# 10. 在其它的电脑上连接 SQL server
+- 找到 容器的ipv6地址 "ipv6_sql2022"
+```
+ ping -6 ipv6_sql2022
+``` 
+### 链接sql server 数据库
+````
+ sqlcmd -S ipv6_sql2022,1433 -U SA
+ 1> select name from sys.databases
+ 2> go
+name                                                                                                                            
+--------------------------------------------------------------------------------------------------------------------------------
+master                                                                                                                          
+tempdb                                                                                                                          
+model                                                                                                                           
+msdb                                                                                                                            
+TestDB                                                                                                                          
+TestDB2 
+````
+### Good Job !
 
