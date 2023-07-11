@@ -10,5 +10,5 @@ Alternatively, you can use xrdp to connect to a graphical desktop for your remot
 - [How to Install Remote Desktop (xrdp) on Ubuntu 22.04](https://www.tutsmake.com/how-to-install-remote-desktop-xrdp-on-ubuntu-22-04/)
 - [How to Install Xrdp Server (Remote Desktop) on Ubuntu 22.04](https://itslinuxfoss.com/install-xrdp-server-ubuntu-22-04/)
 - [How to Install Xrdp Server on Ubuntu 22.04](https://utho.com/docs/tutorial/how-to-install-xrdp-server-on-ubuntu-22-04/)
-- [How to Install xRDP (Remote Desktop) on Ubuntu 22.04|20.04](https://bytexd.com/xrdp-ubuntu/)
+- ❤️ [How to Install xRDP (Remote Desktop) on Ubuntu 22.04|20.04](https://bytexd.com/xrdp-ubuntu/)
 
